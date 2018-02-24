@@ -1,7 +1,7 @@
 export default [
 	{
-		'link': '/?photo=7oS_26cb1Wo',
-		'pic': 'https://images.unsplash.com/40/whtXWmDGTTuddi1ncK5v_IMG_0097.jpg'
+		'link': '/?photo=7oS_26cb1Wo', //preview
+		'pic': 'https://images.unsplash.com/40/whtXWmDGTTuddi1ncK5v_IMG_0097.jpg' //image
 	},
 	{
 		'link': '/?photo=ZsiVhiNDnsQ',
