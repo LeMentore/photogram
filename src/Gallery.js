@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import unsplashData from './unsplash-data';
-import PicItem from './PicItem';
+import unsplashData from 'unsplash-data';
+import PicItem from 'PicItem';
 
 export default class Gallery extends Component {
     constructor(){
