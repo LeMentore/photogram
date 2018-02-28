@@ -11,6 +11,9 @@ app.get('/', (request, response) => {
     response.send(serverTemplate(appString))
 });
 
+app.use('/assets', express.static('./src/assets'))
+app.use('/static', express.static('./static'))
+
 const port = 3001;
 app.listen(port);
 console.log(`localhost:${port}`);
