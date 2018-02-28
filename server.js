@@ -7,7 +7,7 @@ import serverTemplate from './serverTemplate'
 const app = express();
 
 app.get('/', (request, response) => {
-    const appString = ReactDOMServer.renderToString(App);
+    const appString = renderToString(<App/>);
     response.send(serverTemplate(appString))
 });
 
