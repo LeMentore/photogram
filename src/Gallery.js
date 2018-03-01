@@ -29,6 +29,13 @@ export default class Gallery extends Component {
         })
     }
 
+    closePreviewModal(){
+        this.setState({
+            modalIsOpen: false,
+            selectedPicture: { pic: '', link: '' }
+        })
+    }
+
     render(){
         const { paginator, itemsPerPage, modalIsOpen, selectedPicture } = this.state;
         return(
@@ -45,7 +52,7 @@ export default class Gallery extends Component {
                         Load more...
                     </a>
                 </div>
-                <PreviewModal selectedPic={selectedPicture} isOpen={modalIsOpen}/>
+                <PreviewModal selectedPic={selectedPicture} isOpen={modalIsOpen} close={this.closePreviewModal.bind(this)} />
             </div>
         )
     }
