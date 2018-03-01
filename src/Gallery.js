@@ -22,7 +22,8 @@ export default class Gallery extends Component {
         })
     }
 
-    openPreviewModal(pic, link){
+    openPreviewModal(event, pic, link){
+        event.preventDefault()
         this.setState({
             modalIsOpen: true,
             selectedPicture: { pic, link }
