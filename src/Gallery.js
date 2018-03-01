@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import React, { Component } from 'react'
+import { Link } from "react-router-dom"
 import PropTypes from 'prop-types'
-import unsplashData from './unsplash-data';
-import PicItem from './PicItem';
-import PreviewModal from "./PreviewModal";
+import unsplashData from './unsplash-data'
+import PicItem from './PicItem'
+import PreviewModal from "./PreviewModal"
 
 class Gallery extends Component {
     constructor(){
@@ -23,13 +23,13 @@ class Gallery extends Component {
 
         if(pageHash.match(regexp)){
             this.setState({
-                paginator: parseInt(pageHash.replace(/^\D+/g, ''))
+                paginator: parseInt(pageHash.replace(/^\D+/g, ''), 10)
             })
         }
     }
 
     loadMore(){
-        const { paginator } = this.state;
+        const { paginator } = this.state
         this.setState({
             paginator: paginator + 1
         })
@@ -52,7 +52,7 @@ class Gallery extends Component {
 
     render(){
         console.log(this.context)
-        const { paginator, itemsPerPage, modalIsOpen, selectedPicture } = this.state;
+        const { paginator, itemsPerPage, modalIsOpen, selectedPicture } = this.state
         return(
             <div>
                 <h1 style={{textAlign: 'center', marginTop: 50}}>Photogram</h1>

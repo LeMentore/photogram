@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { HashRouter } from 'react-router-dom';
-import Gallery from './Gallery';
+import React, { Component } from 'react'
+import { HashRouter } from 'react-router-dom'
+import Gallery from './Gallery'
 
 class App extends Component {
   render() {
@@ -12,4 +12,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
