@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import { HashRouter } from 'react-router-dom';
 import Gallery from './Gallery';
 
 class App extends Component {
   render() {
-    return <Gallery />
+    return (
+        <HashRouter>
+            <Gallery />
+        </HashRouter>
+    )
   }
 }
 
